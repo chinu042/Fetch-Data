@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate and View Report</title>
+</head>
+<body>
+    <h1>Generate and View Report</h1>
+
+    <!-- Form for entering user information to generate the report -->
+    <form id="generate-report-form">
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="fname">Enter First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname">Enter Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <button type="submit">Generate Report</button>
+    </form>
+
+    <!-- Container to display the generated report -->
+    <div id="report-container"></div>
+
+    <!-- Container to display the profiler data -->
+    <div id="profiler-container"></div>
+
+    <!-- JavaScript code to handle form submission -->
+    <script>
+        document.getElementById('generate-report-form').addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Retrieve values from the form fields
+            var username = document.getElementById('username').value;
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Set up the request to the /generate_report endpoint using POST method
+            xhr.open('POST', '/generate_report', true);
+
+            // Set the content type header
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            // Define the callback function to handle the response
+            xhr.onload = function() {
+                // Check if the request was successful
+                if (xhr.status === 200) {
+                    // Parse the JSON response
+                    var response = JSON.parse(xhr.responseText);
+
+                    // Update the report container with the generated report content
+                    document.getElementById('report-container').innerHTML = response.report_content;
+
+                    // Update the profiler container with the profiler data
+                    document.getElementById('profiler-container').innerHTML = response.profiler_content;
+                } else {
+                    // Log an error message if the request fails
+                    console.log('Request failed. Status: ' + xhr.status);
+                }
+            };
+
+            // Send the request with form data as parameters
+            xhr.send('username=' + username + '&fname=' + fname + '&lname=' + lname);
+        });
+    </script>
+</body>
+</html>

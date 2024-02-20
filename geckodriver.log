@@ -1,0 +1,30 @@
+1708415800502	geckodriver	INFO	Listening on 127.0.0.1:60177
+1708415800670	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/snap/firefox/current/firefox.launcher" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileAnQxAh"
+*** You are running in headless mode.
+Gtk-Message: 13:26:40.700: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708415801069	Marionette	INFO	Marionette enabled
+1708415801137	Marionette	INFO	Listening on port 38423
+Read port: 38423
+1708415801280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1708415809738	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1708415812673	geckodriver	INFO	Listening on 127.0.0.1:57687
+1708415813187	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/snap/firefox/current/firefox.launcher" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileC3chW7"
+*** You are running in headless mode.
+Gtk-Message: 13:26:53.210: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1708415813397	Marionette	INFO	Marionette enabled
+1708415813444	Marionette	INFO	Listening on port 37673
+Read port: 37673
+1708415813584	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.wattpad.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1708415831182	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1708415843519	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
