@@ -47,7 +47,7 @@ This is a simple web application built with Flask that allows users to generate 
 1. Run the Flask application:
 
     ```
-    python app.py
+    python3 app.py
     ```
 
 2. Open your web browser and navigate to `http://127.0.0.1:5000/home`.
@@ -73,6 +73,4 @@ This is a simple web application built with Flask that allows users to generate 
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
