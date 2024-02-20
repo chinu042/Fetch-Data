@@ -7,13 +7,13 @@ This is a simple web application built with Flask that allows users to generate 
 1. Clone the repository to your local machine:
 
     ```
-    git clone <repository_url>
+    git clone https://github.com/chinu042/Fetch-Data.git
     ```
 
 2. Navigate to the project directory:
 
     ```
-    cd <project_directory>
+    cd Fetch-Data
     ```
 
 3. Create a virtual environment (optional but recommended):
